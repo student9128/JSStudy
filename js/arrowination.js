@@ -1,9 +1,18 @@
+/* 这里添加一个注释
+<br/>
+function(w,d){
+    //code....
+}(this,document)
+这里的w代表this,d代表document,代码里使用docuemmnt的地方直接使用d即可
+ */
+
 // !(function (w, d) {
 
     'use strict';
 
+    // var titles = d.querySelectorAll('.title'),
     var titles = document.querySelectorAll('.title'),
-
+    
         i = 0,
         len = titles.length;
 
