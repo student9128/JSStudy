@@ -1,0 +1,17 @@
+#myTable {
+    border-collapse: collapse;
+    border: 1px solid yellowgreen;
+}
+
+td, th {
+    border: 1px solid yellowgreen;
+    padding: 5px;
+
+}
+
+#btn {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid dodgerblue;
+}
