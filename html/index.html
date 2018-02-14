@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter1 Study</title>
+
+</head>
+<body>
+<div id="hello">00</div>
+<script>
+    //    document.write(16 + "Vol");
+    document.getElementById("hello").innerHTML = "Hello";
+</script>
+<p id="demo">我的第一个段落。</p>
+<div id="fun"></div>
+<script>
+    document.getElementById("demo").innerHTML = "你好 Dolly";
+    var person = {
+        firstName: "John",
+        lastName: 'Doe',
+        id: 5522
+    };
+    document.write(person.lastName + "<br/>");
+    document.write(person['lastName'] + "<br/>");
+    var people = {
+        name: "Tom",
+        age: 21,
+        eat: function (x) {
+            return x;
+        }
+    };
+    document.getElementById("fun").innerHTML = people.eat("Tom is 21");
+
+    function Demo() {
+        var obj = new Object();
+        obj.name = 'J';
+        obj.age = 12;
+        obj.firstF = function () {
+
+        }
+        obj.secondF = function () {
+
+        }
+        return obj;
+
+    }
+
+    var one = Demo();
+    document.write(one.age + "<br/>");
+
+    function TDemo() {
+        this.name = 'K';
+        this.age = 13;
+        this.firstF = function () {
+
+        };
+        this.secondF = function () {
+
+        };
+    }
+
+    var two = new TDemo();
+    document.write(two.name);
+
+    var person1 = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+        fullName: function () {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    document.getElementById("demo").innerHTML = person1.fullName();
+
+    const test = () => {//两种写法，ES6可以用该种方法写函数
+        alert("ES6 Test");
+    }
+
+    function testES6() {
+        alert("ES6 Test");
+    }
+
+    var x = "He";
+    var y = "110";
+    let s = x.concat(y);
+    document.write("concat后：\t" + s);
+    let z = "      " + 5;
+    document.write("长度是" + z.length);
+
+    Date.prototype.format = function(fmt) {
+        var o = {
+            "M+" : this.getMonth()+1,                 //月份
+            "d+" : this.getDate(),                    //日
+            "h+" : this.getHours(),                   //小时
+            "m+" : this.getMinutes(),                 //分
+            "s+" : this.getSeconds(),                 //秒
+            "q+" : Math.floor((this.getMonth()+3)/3), //季度
+            "S"  : this.getMilliseconds()             //毫秒
+        };
+        if(/(y+)/.test(fmt)) {
+            fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+        }
+        for(var k in o) {
+            if(new RegExp("("+ k +")").test(fmt)){
+                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+            }
+        }
+        return fmt;
+    }
+
+    var time1 = new Date().format("yyyy-MM-dd hh:mm:ss");
+    document.write(time1 + "<br/>");
+    var time2 = new Date().format("yyyy-MM-dd");
+    document.write(time2 + "<br/>");
+
+    var myVar = [1, 2, 3, 4];
+    document.write(myVar.toString() + "<br/>");
+</script>
+<button onclick="test()">ES6 Test</button>
+<br/>
+<div id="addOneS"></div>
+<button onclick="myFunction()">addOnes</button>
+<script>
+    var tempFunc;
+    var add = (function () {
+        var counter = 0;
+        tempFunc = function () {
+            console.log("current counter:\tcounter="+counter);
+            return counter += 1; }
+        return tempFunc
+    })();
+    function myFunction() {
+        console.log("add === tempFunc : " + (add === tempFunc))
+        document.getElementById("addOneS").innerHTML = add();
+    }
+</script>
+</body>
+</html>

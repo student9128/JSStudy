@@ -1,0 +1,146 @@
+.container {
+    margin: auto;
+    width: 400px;
+    background-color: #E3E0DB;
+}
+
+.calculator {
+    /*background-color: #E3E0DB;*/
+    height: 360px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    /*border-collapse: collapse;*/
+
+}
+
+.column {
+    background-color: #585753;
+}
+
+.number {
+    background-color: #F8F6F3;
+    border: solid #F8F6F3;
+    border-radius: 5px;
+    color: #5C554F;
+}
+
+td {
+    border: solid #585753;
+    border-radius: 5px;
+    box-shadow: 2px 2px #D6D2CB;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: #272727;
+    border: solid #272727;
+    border-radius: 5px;
+}
+
+.number:hover {
+    background-color: #D6D2CB;
+    border: solid #D6D2CB;
+    border-radius: 5px;
+}
+
+td:active {
+    transform: translateY(1px);
+}
+
+#title {
+    padding-top: 10px;
+}
+
+#screen {
+    margin-top: 20px;
+    height: 80px;
+
+    border: 10px inset #E5E4DF;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#screen_div {
+    border: 3px inset #3A342E;
+    height: 74px;
+    background-color: #D2CDAC;
+}
+
+#title {
+    text-align: center;
+    color: black;
+    font-style: normal;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#equal {
+    background-color: #FF6F00;
+    border-radius: 5px;
+    border: solid #FF6F00;
+}
+
+#equal:hover {
+    background-color: #E65100;
+    border-radius: 5px;
+    border: solid #E65100;
+
+}
+
+#result {
+    padding-right: 5px;
+    padding-left: 5px;
+    font-family: calFont;
+    float: right;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: calFont;
+    src: url('../font/digifacewide.ttf');
+}
+
+#multiply:active .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#divide:active .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+#minus:active .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    left: 100%;
+    margin-right: -10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent darkseagreen;
+}
+
+.tooltip {
+    border-radius: 5px;
+    border-color: darkseagreen;
+    visibility: hidden;
+    width: 120px;
+    background-color: darkseagreen;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    z-index: 1;
+    right: 115%;
+    top: 5%;
+    position: absolute;
+    /*opacity: 0;*/
+    /*transition: opacity 1s;*/
+}

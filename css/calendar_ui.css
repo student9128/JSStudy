@@ -1,0 +1,26 @@
+.container {
+    margin: auto;
+    width: 200px;
+    height: auto;
+    background: #F8F6F3;
+    box-shadow: 2px 2px 5px #FF6F00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cWeek {
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.cMonth {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px;
+    color: white;
+    background: #FF6F00;
+    text-align: center;
+}

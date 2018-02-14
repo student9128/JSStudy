@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Dialogue</title>
+    <link href="../css/image_dialogue.css" rel="stylesheet" type="text/css">
+    <script src="../js/image_dialogue.js" type="text/javascript" defer="true"></script>
+</head>
+<body>
+<!--触发弹窗，图片改为你的图片地址-->
+<img src="../img/image_1.jpg" alt="description" id="myImg" width="300" height="200">
+<!--弹窗-->
+<div id="myModal" class="modal">
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    background-color: white;
+    border-radius: 50%;
+    height: 600px;
+    margin: auto;
+    width: 600px;
+}
+
+h1 {
+    color: #495678;
+    font-size: 10px;
+    margin-top: 20px;
+    padding-top: 50px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+form {
+    background-color: #E3E0DB;
+    box-shadow: 4px 4px 3px #D6D2CB;
+    margin: 40px auto;
+    padding: 40px 0 30px 40px;
+    width: 280px;
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    height: 45px;
+    margin: 5px 0 5px 10px;
+    width: 45px;
+}
+
+.btn:nth-child(4) {
+    margin: 5px 0 5px 10px;
+    width: 105px;
+}
+.btn:last-child{
+width: 105px;
+}
+
+.btn, #display, form {
+    border-radius: 5px;
+}
+#screen_border{
+    border: 10px inset #E5E4DF; 
+    height: 80px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 202px;
+}
+#screen_inner{
+    border: 3px inset #3A342E;
+    height: 74px;
+    width: 202px;
+    background-color: #D2CDAC;
+}
+#display {
+
+    background-color: #D2CDAC;
+    color:black;
+    font-size: 20px;
+    height: 74px;
+    text-align:right;
+    width: 192px;
+    padding-right: 10px;
+
+}
+.number {
+    background-color: white;
+    box-shadow: 2px 2px #D6D2CB;
+    color: #5C554F;
+}
+ .number:active {
+     box-shadow: 2px 2px #D6D2CB;
+     -webkit-transform: translateY(2px);
+     -ms-transform: translateY(2px);
+     -moz-transform: translateY(2px);
+     transform: translateY(2px);
+
+ }
+.operator {
+    background-color: #585753;
+    box-shadow: 2px 2px #D6D2CB;
+    color: white;
+}
+.operator:active {
+    box-shadow: 2px 2px #D6D2CB;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -moz-tranform: translateY(2px);
+    transform: translateY(2px);
+}
+.other {
+    background-color: #e3844c;
+    box-shadow: 2px 2px #ac4e2c38;
+    color: white;
+}
+.other:active {
+    box-shadow: 0 2px #e76a3d;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -moz-tranform: translateY(2px);
+    transform: translateY(2px);
+}

@@ -1,0 +1,14 @@
+#container {
+    width: 100%;
+    background-color: red;
+    height: 50px;
+}
+
+#progress {
+    width: 1%;
+    background-color: #967300da;
+    height: 50px;
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}

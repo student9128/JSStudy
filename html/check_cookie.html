@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckCookie</title>
+    <link href="../css/check_cookie_style.css" type="text/css" rel="stylesheet">
+    <script src="../js/check_cookie.js">
+    </script>
+</head>
+<body onload="checkCookie()">
+<div id="cookiename" style="height: 30px">
+</div>
+<div>
+    <button class="btn" onclick="showDelayAlert()">点击按钮，3秒后弹出提示框</button>
+</div>
+<br/>
+<br/>
+<form>
+    <input type="button" value="开始计数" class="btn" onclick="doTimer()">
+    <input type="text" id="txt">
+</form>
+<br/>
+<div>
+    <button class="btn" onclick="showClock()">点击显示时钟</button>
+    <span id="clock"></span>
+</div>
+<br/>
+<div onclick="newPerson()" class="btn">创建用于对象的模板:点击我
+    <div id="model">
+    </div>
+</div>
+<div class="slideContainer">
+    <div class="mySlide fade" style="display: block">
+        <div class="numberText">1 / 3
+        </div>
+        <img src="../img/image_1.jpg" class="slideImage" style="width: 100%">
+        <div class="desc">文本1</div>
+    </div>
+    <div class="mySlide fade">
+        <div class="numberText">2 / 3
+        </div>
+        <img src="../img/image_2.jpg" class="slideImage" style="width: 100%">
+        <div class="desc">文本2</div>
+    </div>
+    <div class="mySlide fade">
+        <div class="numberText">3 / 3
+        </div>
+        <img src="../img/image_3.jpg" class="slideImage" style="width: 100%">
+        <div class="desc">文本3</div>
+    </div>
+    <a class="prev" onclick="plusSlide(-1)">＜</a>
+    <a class="next" onclick="plusSlide(1)">＞</a>
+    <div style="text-align: center" id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+<br/>
+</div>
+</body>
+</html>
