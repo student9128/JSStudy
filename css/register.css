@@ -1,0 +1,70 @@
+input[type=email],input[type=password]{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #CCC;
+    margin: 8px 0;
+}
+button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+}
+.cancelbtn{
+ background-color: red;
+ padding: 14px 20px;
+}
+.cancelbtn,.signupbtn{
+    float: left;
+    width: 50%;
+}
+.container{
+    padding: 16px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top:60px;
+}
+.modal-content{
+    background-color: #FEFEFE;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close{
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,.close:focus{
+    color: blueviolet;
+    cursor: pointer;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and(max-width:300px){
+    .cancelbtn,.signupbtn{
+        width: 100%;
+    }
+}
+
