@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tab Card Vertical</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/tabcard_vertical.css" />
+    <script src="../js/tabcard-with-ani.js" defer="true"></script>
+</head>
+<body>
+    <h2>垂直方向选项卡</h2>
+    <div class="tab">
+        <button class="tablinks" id="defaultOpen" onclick="openCity(event,'London')">London</button>
+        <button class="tablinks" onclick="openCity(event,'Paris')">Paris</button>
+        <button class="tablinks"  onclick="openCity(event,'Tokoyo')">Tokoyo</button>
+    </div>
+    <div class="tabcontent" id="London">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times;</span>
+            <h3>London</h3>
+            <p>London is the capital of UK.</p>
+        </div>
+        <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+    
+        <div id="Tokoyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+</body>
+</html>

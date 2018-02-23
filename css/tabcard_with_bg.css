@@ -1,0 +1,46 @@
+
+.tab{
+    background-color: palevioletred;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    padding: 0
+}
+.tab button{
+    background-color: inherit;
+    color: white;
+    float: left;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    padding: 22px 16px;
+    width: 25%;
+    user-select: none;
+} 
+.tab button:hover{
+background-color: tomato;
+}
+/*
+.tablinks{
+    /* background-color: palevioletred;
+    color: white;
+    outline: none;
+    border: none;
+    width: 25%; 
+    float: left;
+} */
+.tabcontent{
+    padding: 10px 16px;
+}
+#London{
+    background-color: springgreen;
+}
+#Paris{
+    background-color: steelblue;
+}
+#Tokoyo{
+    background-color: slateblue;
+}
+#Oslo{
+    background-color: teal;
+}

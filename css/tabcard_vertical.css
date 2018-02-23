@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box
+}
+
+.tab {
+    background-color: #F1F1F1;
+    border: 1px solid #CCC;
+    width: 30%;
+    height: 300px;
+    float: left;
+}
+
+.tab button {
+    background-color: inherit;
+    width: 100%;
+    padding: 16px;
+    display: block;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.tab button:hover{
+    background-color: #DDD;
+}
+.tab button.active{
+    background-color: #CCC;
+}
+.tabcontent {
+    width: 70%;
+    float: left;
+    height: 300px;
+    padding: 0px 12px;
+    border: 1px solid #CCC;
+    border-left: none;
+}
+.topright{
+    font-size: 20px;
+    float: right;
+}
+.topright:hover{
+    color: red;
+}
