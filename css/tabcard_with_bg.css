@@ -1,4 +1,5 @@
 
+
 .tab{
     background-color: palevioletred;
     overflow: hidden;
@@ -14,6 +15,7 @@
     outline: none;
     border: none;
     padding: 22px 16px;
+    margin: 0;
     width: 25%;
     user-select: none;
 } 
