@@ -1,0 +1,16 @@
+body{
+    max-width: 640px;
+    margin: 0 auto;
+}
+#banner ul li{
+width: 100%;
+list-style: none;
+width: 640px;
+height: 250px;
+color: white;
+background-color: #f00;
+text-align: center;
+}
+#banner ul li:not(:first-child){
+    display: none;
+}
