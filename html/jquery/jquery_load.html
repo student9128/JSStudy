@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Load</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/jquery/jquery_load.css" />
+    <script src="../../js/jquery-3.3.1.js"></script>
+    <!-- <script src="../../js/jquery/jquery-load.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").load("../../doc/demo_test.txt",function(responseTxt,statusTxt,xhr){
+                    if(statusTxt=='success'){
+                        alert('外部内容加载成功');
+                    }
+                    if(statusTxt=='error'){
+                        alert("error: "+xhr.status+":"+xhr.statusText);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <h2>使用jQuery AJAX修改文本内容</h2>
+    </div>
+    <button>获取外部内容</button>
+</body>
+
+</html>

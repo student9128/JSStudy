@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQuery Validate Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="http://static.runoob.com/assets/jquery-validation-1.14.0/demo/css/screen.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/jquery/jquery_validate_test.css" />
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+    <script src="../../js/jquery/jquery-validate-test.js" defer="true">
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <form method="GET" class="cmxform" id="form1" action="">
+            <fieldset>
+                <legend>登录框</legend>
+                <p>
+                    <label>用户名</label>
+                    <input type="text" name="user" title="请输入用户名（至少三个字母）" required minlength="3">
+                </p>
+                <p>
+                    <label>密码</label>
+                    <input type="password" maxlength="12" name="password" title="请输入密码，字母在5到12个之间" required minlength="5">
+                </p>
+                <div class="error"></div>
+                <p>
+                    <input type="submit" class="submit" value="Login">
+                </p>
+            </fieldset>
+        </form>
+        <div class="container">
+            <h4>在你提交表单时出现了以下错误，详情如下：</h4>
+            <ol>
+                <li>
+                    <label for="email" class="error">请输入邮箱地址</label>
+                </li>
+                <li>
+                    <label for="phone" class="error">请输入电话号码</label>
+                </li>
+                <li>
+                    <label for="address" class="error">请输入地址</label>
+                </li>
+                <li>
+                    <label for="avatar" class="error">请选择图片</label>
+                </li>
+                <li>
+                    <label for="cv" class="error">请选择文档</label>
+                </li>
+            </ol>
+        </div>
+        <form action="" class="cmxform" id="form2" method="GET">
+            <fieldset>
+                <legend>验证完整表单</legend>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="agree">喜欢的颜色</label>
+                    <select name="color" id="color" title="请选择你喜欢的颜色" required>
+                        <option></option>
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Yellow</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="phone">电话</label>
+                    <input type="number" id="phone" name="phone" required rangelength="[2,8]">
+                </p>
+                <p>
+                    <label for="address">地址</label>
+                    <input type="text" id="address" name="address" required minlength="3">
+                </p>
+                <p>
+                    <label for="avatar">头像</label>
+                    <input type="file" id="avatar" name="avatar" required>
+                </p>
+                <p>
+                    <label for="agress">请同意我们的声明</label>
+                    <input type="checkbox" class="checkbox" id="agress" title="请同意我们的声明">
+                </p>
+                <p>
+                    <input type="submit" class="submit" value="提交">
+                    <input type="submit" class="cancel" value="取消">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
